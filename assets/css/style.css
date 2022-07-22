@@ -5,6 +5,10 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+main{
+    margin: auto;
+    max-width: 1440px;
+}
 #Home{
     position: relative;
 }
@@ -75,7 +79,7 @@ header nav li{
     font-family: 'Sail';
     font-style: normal;
     font-weight: 1em;
-    font-size: 200%;
+    font-size: 350%;
     line-height: 1em;
     text-align: center;
 }
@@ -94,16 +98,21 @@ header nav li a:hover{
     height: 100vh
 }
 #Sobre div.sobre{
-    display: absolute;
-    position: relative;
     height: 50%;
     top: 2.5%;
 }
+#Sobre div.sobre div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 #Sobre div.sobre img{
-    right: 50%;
-    transform: translatex(30%);
-    width: 60vw;
-    margin: 0.5%
+    height: 45vh;
+    max-width: 1150px;
+    margin: 2vh;
+}
+#Artistas{
+    display: none;
 }
 #Album h3{
     font-family: 'Abhaya Libre';
@@ -122,6 +131,7 @@ header nav li a:hover{
 }
 #Album div#album img{
     filter: grayscale(100%);
+    width: 20vw
 }
 #Album div#album img:hover{
     filter: grayscale(0%);
@@ -130,7 +140,7 @@ header nav li a:hover{
 
 #Contato{
     height: 100vh;
-    margin: 8vh 0 0 0
+    margin: 50px 0 0 0
 }
 #Contato p.contato{
     font-family: 'Sail';
@@ -216,7 +226,6 @@ header nav li a:hover{
     font-style: normal;
     font-weight: 400;
     font-size: 1.4em;
-
     color: rgb(255, 255, 255);
 }
 iframe{
@@ -228,23 +237,29 @@ footer{
     justify-items: space-around;
     justify-content: space-around;
     height: 40vh;
-    width: 100vw;
+    width: 100%;
     background-color: #160D00;
 }
-footer div{
+footer div.footer{
+    position: relative;
+    justify-content: center;
     width: 30%;
-    height: 100%;
+    height: 40vh;
+
 }
-footer div img{
+footer div.footer div.img{
     height: 80%;
+    
+}
+footer div.footer div.img img{
+    height: 100%;
 }
 footer div.logo div.rede{
     display: flex;
-    width: 40%;
-    height: 2vh;
+    width: 80%;
+    height: 4vh;
     justify-content: space-around;
 }
-
 footer div.contato p{
     margin-top: 10vh;
 }
@@ -255,8 +270,265 @@ footer div.contato p{
     font-size: 1.3em;
     line-height: 1.3em;
     text-align: center;
-
     color: #FFF3F3;
+}
 
-
+@media screen and (max-width: 1440px){
+    #Sobre div.sobre img{
+        width: 70vw;
+        height: auto;
+        max-width: 1150px;
+        margin: 6vh;
+    }
+}
+.mobile{
+    display: hidden;
+}
+@media screen and (max-width: 840px){
+    .mobile{
+        display: inherit;
+    }
+    header{
+        display: flex;
+        width: 100%;
+        height: 8vh;
+        background-color: #000000;
+    }
+    #BgHome{
+        overflow: hidden;
+        width: 100%;
+        height: 92vh;
+        background-size: cover;
+        background-position: center;
+        background-image: url(/assets/img/background_home_mobile.png);
+    }
+    #Home svg{
+        position: absolute;
+        bottom: 1%;
+        right: 46.5%;
+        transition: 0.5s;
+        transform: scale(0.8);
+    
+    }
+    #Home svg:hover{
+        cursor: pointer;
+        transform: scale(1);
+        transition: 0.5s;
+    
+    }
+    header div{
+        display: flex;
+        width: 10vw;
+        text-align: center;
+        justify-content: center;
+    }
+    header div img{
+        width: 100%;
+        align-self: center;
+    }
+    header nav{
+        width: 90vw;
+        height: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+    }
+    header nav li{
+        display: flex;
+        font-family: 'Sail';
+        font-style: normal;
+        font-weight: 1em;
+        font-size: 350%;
+        line-height: 1em;
+        text-align: center;
+    }
+    header nav li a{
+        text-decoration: none;
+        align-self: center;
+        color: #E4C494;
+        transition: 0.5s;
+    }
+    header nav li a:hover{
+        transition: 0.5s;
+        color: #D47F00;
+        text-shadow: 0px 0px 0.1em rgba(212, 127, 0, 1);
+    }
+    #Sobre{
+        height: 100vh
+    }
+    #Sobre div.sobre{
+        height: 50%;
+        top: 2.5%;
+    }
+    #Sobre div.sobre div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #Sobre div.sobre img{
+        height: 45vh;
+        max-width: 1150px;
+        margin: 2vh;
+    }
+    #Artistas{
+        display: none;
+    }
+    #Album h3{
+        font-family: 'Abhaya Libre';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 4em;
+        line-height: 123px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    #Album div#album{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 20vw 20vw 20vw;
+        grid-gap: 2px;
+    }
+    #Album div#album img{
+        filter: grayscale(100%);
+        width: 20vw
+    }
+    #Album div#album img:hover{
+        filter: grayscale(0%);
+    
+    }
+    
+    #Contato{
+        height: 100vh;
+        margin: 50px 0 0 0
+    }
+    #Contato p.contato{
+        font-family: 'Sail';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5em;
+        line-height: 46px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    #Contato h4{
+        font-family: 'Abhaya Libre';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.5em;
+        line-height: 57px;
+        text-align: center;
+        color: #DB9731;
+    }
+    #Contato h5{
+        font-family: 'Abhaya Libre';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5em;
+        line-height: 38px;
+        text-align: center;
+        color: #DB9731;
+    }
+    #Contato p.texto{
+        font-family: 'Abhaya Libre';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 24px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    #Contato p.texto a{
+        color: #DB9731;
+    }
+    #Contato form{
+        display: grid;
+        margin: auto;
+        width: 70%;
+        grid-template-areas:
+            "nome nome"
+            "email assunto"
+            "Mensagem Mensagem"
+            ;
+        grid-gap: 1vh;
+        
+    }
+    #Contato form input{
+        background-color: rgba(255,255,255,0);
+        border: 1.35491px solid #DB9731;
+        font-family: 'Abhaya Libre';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.4em;
+        color: rgb(255, 255, 255);
+    }
+    #Contato form input:placeholder{
+        color: rgba(255, 255, 255, 0.7);
+    }
+    #Contato form input#nome{
+        grid-area: nome;
+        height: 5vh;
+    }
+    #Contato form input#email{
+        grid-area: email;
+        height: 5vh;
+    }
+    #Contato form input#assunto{
+        grid-area: assunto;
+        height: 5vh;
+    }
+    #Contato form #Mensagem{
+        grid-area: Mensagem;
+        height: 40vh;
+        background-color: rgba(255,255,255,0);
+        border: 1.35491px solid #DB9731;
+        font-family: 'Abhaya Libre';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.4em;
+        color: rgb(255, 255, 255);
+    }
+    iframe{
+        height: 30vw;
+    }
+    
+    footer{
+        display: flex;
+        justify-items: space-around;
+        justify-content: space-around;
+        height: 40vh;
+        width: 100%;
+        background-color: #160D00;
+    }
+    footer div.footer{
+        position: relative;
+        justify-content: center;
+        width: 30%;
+        height: 40vh;
+    
+    }
+    footer div.footer div.img{
+        height: 80%;
+        
+    }
+    footer div.footer div.img img{
+        height: 100%;
+    }
+    footer div.logo div.rede{
+        display: flex;
+        width: 80%;
+        height: 4vh;
+        justify-content: space-around;
+    }
+    footer div.contato p{
+        margin-top: 10vh;
+    }
+    footer div.contato p{
+        font-family: 'Abhaya Libre';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.3em;
+        line-height: 1.3em;
+        text-align: center;
+        color: #FFF3F3;
+    }
 }
