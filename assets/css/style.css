@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600&family=Sail&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -73,9 +74,9 @@ header nav li{
     display: flex;
     font-family: 'Sail';
     font-style: normal;
-    font-weight: 400;
-    font-size: 53.7605px;
-    line-height: 62px;
+    font-weight: 1em;
+    font-size: 200%;
+    line-height: 1em;
     text-align: center;
 }
 header nav li a{
@@ -88,4 +89,119 @@ header nav li a:hover{
     transition: 0.5s;
     color: #D47F00;
     text-shadow: 0px 0px 0.1em rgba(212, 127, 0, 1);
+}
+#Sobre{
+    height: 100vh
+}
+#Sobre div.sobre{
+    display: absolute;
+    position: relative;
+    height: 50%;
+    top: 2.5%;
+}
+#Sobre div.sobre img{
+    right: 50%;
+    transform: translatex(30%);
+    width: 60vw;
+    margin: 0.5%
+}
+
+#Contato{
+    height: 100vh;
+    margin: 8vh 0 0 0
+}
+#Contato p.contato{
+    font-family: 'Sail';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 46px;
+    text-align: center;
+    color: #FFFFFF;
+}
+#Contato h4{
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5em;
+    line-height: 57px;
+    text-align: center;
+    color: #DB9731;
+}
+#Contato h5{
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 38px;
+    text-align: center;
+    color: #DB9731;
+}
+#Contato p.texto{
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+#Contato p.texto a{
+    color: #DB9731;
+}
+#Contato form{
+    display: grid;
+    margin: auto;
+    width: 70%;
+    grid-template-areas:
+		"nome nome"
+		"email assunto"
+		"Mensagem Mensagem"
+		;
+    grid-gap: 1vh;
+    
+}
+#Contato form input{
+    background-color: rgba(255,255,255,0);
+    border: 1.35491px solid #DB9731;
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4em;
+    color: rgb(255, 255, 255);
+}
+#Contato form input:placeholder{
+    color: rgba(255, 255, 255, 0.7);
+}
+#Contato form input#nome{
+    grid-area: nome;
+    height: 5vh;
+}
+#Contato form input#email{
+    grid-area: email;
+    height: 5vh;
+}
+#Contato form input#assunto{
+    grid-area: assunto;
+    height: 5vh;
+}
+#Contato form #Mensagem{
+    grid-area: Mensagem;
+    height: 40vh;
+    background-color: rgba(255,255,255,0);
+    border: 1.35491px solid #DB9731;
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4em;
+
+    color: rgb(255, 255, 255);
+}
+iframe{
+    height: 30vw;
+}
+footer{
+    height: 40vh;
+    width: 100vw;
+    background-color: #160D00;
 }
