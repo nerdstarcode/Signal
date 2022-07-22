@@ -41,7 +41,7 @@ body::-webkit-scrollbar-thumb {
     height: 92vh;
     background-size: cover;
     background-position: center;
-    background-image: url('https://github.com/nerdstarcode/Signal/blob/master/assets/img/background_home.png');
+    background-image: url('https://github.com/nerdstarcode/Signal/blob/master/assets/img/background_home.png?raw=true');
 }
 #Home svg{
     position: absolute;
