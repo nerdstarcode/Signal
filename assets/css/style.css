@@ -103,6 +103,20 @@ header nav li a:hover{
     height: 100vh;
     overflow-y: scroll;
 }
+#Sobre div.sobre::-webkit-scrollbar {
+    width: 0.5em;
+    position: absolute;
+}
+
+#Sobre div.sobre::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+#Sobre div.sobre::-webkit-scrollbar-thumb {
+    background-color: rgba(228, 196, 148, 1);
+    outline: 1px solid rgba(212, 127, 0, 1);
+    
+}
 #Sobre div.sobre div{
     display: flex;
     align-items: center;
@@ -364,7 +378,7 @@ div.mobile_home{
         border: 2px solid rgba(212, 127, 0, 0.5);
     }
     #BgHome{
-        background-image: url(/assets/img/background_home_mobile.png);
+        background-image: url(https://github.com/nerdstarcode/Signal/blob/master/assets/img/background_home_mobile.png?raw=true);
     }
     div.mobile_home{
         position: absolute;
@@ -423,5 +437,33 @@ div.mobile_home{
     }
     #Slider{
         display: none;
+    }
+    #Album h3{
+        font-size: 2em;
+    }
+    #Album div#album{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 20vw 20vw;
+        row-gap: 2px;
+        column-gap: 2px;
+    }
+    #Contato form{
+        display: grid;
+        margin: auto;
+        width: 80%;
+        grid-template-areas:
+            "nome nome"
+            "email email"
+            "assunto assunto"
+            "Mensagem Mensagem"
+            ;
+        grid-gap: 1vh;
+    }
+    #Contato form input{
+        font-size: 1em;
+    }
+    #Contato form #Mensagem{
+        font-size: 1em;
     }
 } 
