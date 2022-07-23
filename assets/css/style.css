@@ -444,9 +444,14 @@ div.mobile_home{
     #Album div#album{
         display: grid;
         justify-content: center;
-        grid-template-columns: 20vw 20vw;
+        grid-template-columns: 30vw 30vw;
+        grid-auto-rows: 30vw;
         row-gap: 2px;
         column-gap: 2px;
+    }
+    #Album div#album img{
+        filter: grayscale(100%);
+        width: 30vw
     }
     #Contato form{
         display: grid;
