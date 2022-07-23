@@ -355,6 +355,7 @@ div.mobile_home{
         background-color: #000000;
     }
     header.active{
+        z-index: 1;
         transition: 0.5s;
         transform: translateY(31vh);
     }
@@ -473,5 +474,8 @@ div.mobile_home{
     }
     #Contato form #Mensagem{
         font-size: 1em;
+    }
+    #Home svg{
+        visibility: hidden;
     }
 } 
