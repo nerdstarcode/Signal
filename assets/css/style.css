@@ -41,7 +41,7 @@ body::-webkit-scrollbar-thumb {
     height: 92vh;
     background-size: cover;
     background-position: center;
-    background-image: url('https://github.com/nerdstarcode/Signal/blob/master/assets/img/background_home.png?raw=true');
+    background-image: url('../img/background_home.png');
 }
 #Home svg{
     position: absolute;
@@ -128,9 +128,7 @@ header nav li a:hover{
     max-width: 1150px;
     margin: 6vh;
 }
-#Slider{
-    display: none;
-}
+
 #Album h3{
     font-family: 'Abhaya Libre';
     font-style: normal;
@@ -379,7 +377,7 @@ div.mobile_home{
         border: 2px solid rgba(212, 127, 0, 0.5);
     }
     #BgHome{
-        background-image: url(https://github.com/nerdstarcode/Signal/blob/master/assets/img/background_home_mobile.png?raw=true);
+        background-image: url('../img/');
     }
     div.mobile_home{
         position: absolute;
@@ -438,9 +436,6 @@ div.mobile_home{
         height: auto;
         max-width: 1150px;
         margin: 6vh;
-    }
-    #Slider{
-        display: none;
     }
     #Album h3{
         font-size: 2em;
