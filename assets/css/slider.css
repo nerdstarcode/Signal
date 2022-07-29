@@ -1,0 +1,191 @@
+
+#Artistas
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+}
+#Slider
+{
+    width: auto;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: justify;
+    margin: 0 5vw 0 5vw;
+    padding: 1.5vw 0 0 0 
+
+}
+#Slider article{
+    display: flex;
+    width: 20%;
+    justify-content: center;
+}
+#Slider article a
+{
+    text-decoration: none;
+    color: #fff;
+}
+#Slider article a
+{
+    display: grid;
+    width: 80%;
+    height: fit-content;
+    transition: 1s;
+}
+.header_slider
+{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+
+.Silder_Artista
+{
+    height: auto;
+    background-image: url('../img/slider/adryel.png');
+}
+.Silder_Artista img
+{
+    width: 100%;
+    transition: 1s;
+    transform: translateY(3%)
+}
+.Silder_Artista
+{
+    background: #120B00;
+    border-radius: 40% 40% 0 0;
+}
+.SilderSelection a h4
+{
+    transition: 1s;
+    height: 5vh;
+    background: #D47F00;
+    font-family: 'Sail';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2em;
+    line-height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10 !important;
+}
+.SilderSelection a p
+{
+    display: none;
+    font-family: 'Salsa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 22px;
+    text-align: justify;
+    padding: 10px
+}
+.SilderSelection:target a p
+{
+    transition: 1s;
+    display: inherit;
+    background: #120B00;
+}
+#Slider article:hover a{
+    transition: 1s;
+    width: 70%;
+}
+#Slider article:target a
+{
+    width: 100%;
+    transition: 1s;
+}
+#Slider article:target h4{
+    color: #352B2B !important;
+    transition: 1s;
+}
+#Slider article:target{
+    width: 30%;
+}
+#carousel
+{
+    display: flex;
+    justify-content: space-around;
+    height: 30vh;
+    width: 100%;
+    background: #1F1616;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 0 5% 0 5%
+}
+#carousel img
+{
+    width: 18%;
+    border-radius: 10%;
+    -webkit-box-reflect: below 1px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+#carousel img.w1
+{
+    width: 10%;
+}
+#carousel img.w2
+{
+    width: 15%;
+}
+#carousel img:hover{
+    transform: scale(1.2);
+    cursor: zoom-in;
+}
+
+@media screen and (max-width: 840px){
+    .SilderSelection a h4
+    {
+        font-size: 1.2em;
+    }
+    #carousel
+    {
+        background: none !important;
+    }
+    #carousel img
+    {
+        width: 35%;
+    }
+    #carousel img.w1
+    {
+        display: none;
+    }
+    #carousel img.w2
+    {
+        width: 25%;
+    }
+    .header_slider
+    {
+        display: grid;
+        height: 70vh;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .SilderSelection:target a p
+    {
+        display: none;
+    }
+    #Slider
+    {
+        margin: 0 0 0 5vw;
+        padding: 0; 
+    }
+
+    #Slider article
+    {
+        width: 60%;
+        margin: auto;
+    }
+    #Slider article:target{
+        width: 60%;
+        transform: scale(1.1);
+    }
+}
+
+

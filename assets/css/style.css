@@ -29,7 +29,6 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-track {
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
-
 body::-webkit-scrollbar-thumb {
     background-color: rgba(228, 196, 148, 1);
     outline: 1px solid rgba(212, 127, 0, 1);
@@ -41,7 +40,7 @@ body::-webkit-scrollbar-thumb {
     height: 92vh;
     background-size: cover;
     background-position: center;
-    background-image: url('https://github.com/nerdstarcode/Signal/blob/master/assets/img/background_home.png?raw=true');
+    background-image: url('../img/background_home.png');
 }
 #Home svg{
     position: absolute;
@@ -107,7 +106,6 @@ header nav li a:hover{
     width: 0.5em;
     position: absolute;
 }
-
 #Sobre div.sobre::-webkit-scrollbar-track {
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
@@ -127,9 +125,6 @@ header nav li a:hover{
     height: auto;
     max-width: 1150px;
     margin: 6vh;
-}
-#Slider{
-    display: none;
 }
 #Album h3{
     font-family: 'Abhaya Libre';
@@ -154,7 +149,6 @@ header nav li a:hover{
     filter: grayscale(0%);
 
 }
-
 #Contato{
     height: 100vh;
     margin: 50px 0 0 0
@@ -248,7 +242,6 @@ header nav li a:hover{
 iframe{
     height: 30vw;
 }
-
 footer{
     display: flex;
     justify-items: space-around;
@@ -259,27 +252,28 @@ footer{
 }
 footer div.footer{
     position: relative;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     width: 30%;
     height: 40vh;
 }
 footer div.footer div.img{
     height: 80%;
-    
+    display: flex;
+    justify-content: center;
 }
 footer div.footer div.img img{
     height: 100%;
 }
-footer div.logo div.rede{
+footer  div.rede{
     display: flex;
-    width: 80%;
+    width: 95%;
     height: 4vh;
     justify-content: space-around;
 }
 footer div.contato p{
     margin-top: 10vh;
-}
-footer div.contato p{
     font-family: 'Abhaya Libre';
     font-style: normal;
     font-weight: 400;
@@ -292,7 +286,6 @@ div.mobile_home{
     height: 0vh;
 }
 @media screen and (max-width: 1800px){
-    
     #Album div#album{
         display: grid;
         justify-content: center;
@@ -303,7 +296,6 @@ div.mobile_home{
         filter: grayscale(100%);
         width: 20vw
     }
-    
 }
 .mobile{
     display: hidden;
@@ -352,7 +344,7 @@ div.mobile_home{
         position: relative;
         width: 100vw;
         height: 40vh;
-        background-color: #000000;
+        background-color: #1F1313;
     }
     header.active{
         z-index: 1;
@@ -379,7 +371,7 @@ div.mobile_home{
         border: 2px solid rgba(212, 127, 0, 0.5);
     }
     #BgHome{
-        background-image: url(https://github.com/nerdstarcode/Signal/blob/master/assets/img/background_home_mobile.png?raw=true);
+        background-image: url('../img/background_home_mobile.png');
     }
     div.mobile_home{
         position: absolute;
@@ -416,8 +408,6 @@ div.mobile_home{
         width: 150%;
         height: 25%;
         transform: translatex(-15%);
-
-
     }
     #Sobre div.sobre{
         height: 0vh;
@@ -438,9 +428,6 @@ div.mobile_home{
         height: auto;
         max-width: 1150px;
         margin: 6vh;
-    }
-    #Slider{
-        display: none;
     }
     #Album h3{
         font-size: 2em;
@@ -477,5 +464,10 @@ div.mobile_home{
     }
     #Home svg{
         visibility: hidden;
+    }
+    footer div.contato p{
+        font-size: 1.16em;
+        margin: 4vh 0 2vh 0;
+
     }
 } 
