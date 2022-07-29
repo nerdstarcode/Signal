@@ -44,10 +44,10 @@ Nina.addEventListener('click' , ()=>{
 
 function Slider_Target(artista){
     Slider.innerHTML = `
-    <img class="w1" src="/assets/img/slider/${artista}/01.png" alt="">
-    <img class="w2" src="/assets/img/slider/${artista}/01.png" alt="">
-    <img class="" src="/assets/img/slider/${artista}/01.png" alt="">
-    <img class="w2" src="/assets/img/slider/${artista}/01.png" alt="">
-    <img class="w1" src="/assets/img/slider/${artista}/01.png" alt="">
+    <img class="w1" src="assets/img/slider/${artista}/01.png" alt="">
+    <img class="w2" src="assets/img/slider/${artista}/01.png" alt="">
+    <img class="" src="assets/img/slider/${artista}/01.png" alt="">
+    <img class="w2" src="assets/img/slider/${artista}/01.png" alt="">
+    <img class="w1" src="assets/img/slider/${artista}/01.png" alt="">
     `
 }
