@@ -113,16 +113,18 @@
     justify-content: space-around;
     height: 30vh;
     width: 100%;
-    background: #352B2B;
+    background: #1F1616;
     align-items: center;
     overflow: hidden;
     border-radius: 20px;
     padding: 0 5% 0 5%
 }
-#carousel img{
+#carousel img
+{
     width: 18%;
     border-radius: 10%;
     -webkit-box-reflect: below 1px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
 }
 #carousel img.w1
 {
@@ -133,12 +135,56 @@
     width: 15%;
 }
 #carousel img:hover{
-    transform: scale(1.1);
+    transform: scale(1.2);
+    cursor: zoom-in;
 }
+
 @media screen and (max-width: 840px){
     .SilderSelection a h4
     {
         font-size: 1.2em;
+    }
+    #carousel
+    {
+        background: none !important;
+    }
+    #carousel img
+    {
+        width: 35%;
+    }
+    #carousel img.w1
+    {
+        display: none;
+    }
+    #carousel img.w2
+    {
+        width: 25%;
+    }
+    .header_slider
+    {
+        display: grid;
+        height: 70vh;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .SilderSelection:target a p
+    {
+        display: none;
+    }
+    #Slider
+    {
+        margin: 0 0 0 5vw;
+        padding: 0; 
+    }
+
+    #Slider article
+    {
+        width: 60%;
+        margin: auto;
+    }
+    #Slider article:target{
+        width: 60%;
+        transform: scale(1.1);
     }
 }
 
